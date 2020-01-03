@@ -1,6 +1,7 @@
 import './nav.css';
 import React from 'react';
 import closeIcon from '../../../assets/close.svg';
+import logo from '../../../assets/logo.svg';
 import {
     BrowserRouter as Router,
     Link
@@ -23,11 +24,18 @@ class Menu extends React.Component {
     }
 
     render() {
+      
         return(
             <div>
-                <div className="menu-trigger" >
-                    <span onClick={ this.handleClick }></span>
+                <div className="headerTop">
+                    <div className="logoTop">
+                        <img src={logo} alt="" className="logo" />
+                    </div>
+                    <div className="menu-trigger" >
+                        <span onClick={ this.handleClick }></span>
+                    </div>
                 </div>
+
                 <div  className={ this.state.condition ? "menu menu--open" : "menu" }>
                     <div className="menu__item menu__item--1" data-direction="bt" >
                         <div className="menu__item-inner" >

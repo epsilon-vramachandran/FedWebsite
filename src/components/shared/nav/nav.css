@@ -427,3 +427,11 @@ body {
     transform: matrix(-1, 0, 0, -1, 0, 0);
     opacity: 1;
 }
+.logoTop{
+	width: 268px;
+	height: 92px;
+	float: left;
+}
+.headerTop{
+	height: 125px;
+}
