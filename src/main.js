@@ -9,9 +9,10 @@ import Menu from './components/shared/nav/nav';
 import Fed  from './components/fed/fed';
 import Projects from './components/projects/projects';
 import Talks from './components/talks/talks';
-import Team from './components/team/team';
+import team from './components/team/team';
 import Training from './components/training/traning';
 import Coders from './components/coders/coders';
+import Title from './components/title/title';
 
 function Main() {
   	return (
@@ -51,7 +52,8 @@ function Main() {
 		<Route exact path="/talks" component= { Talks }/>
 		<Route exact path="/training" component= { Training }/>
 		<Route exact path="/coders" component= { Coders }/>
-				
+		<Route exact path="/title" component= { Title }/>
+		<Route exact path="/team" component= { team }/>
 			</Router>
 		</React.Fragment>
   	);
