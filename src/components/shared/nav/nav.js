@@ -2,10 +2,7 @@ import './nav.css';
 import React from 'react';
 import closeIcon from '../../../assets/close.svg';
 import logo from '../../../assets/logo.svg';
-import {
-    BrowserRouter as Router,
-    Link
-  } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Menu extends React.Component {
 
@@ -58,11 +55,11 @@ class Menu extends React.Component {
                     <div className="menu__item menu__item--3" data-direction="bt" >
                         <div className="menu__item-inner" >
                             <div className="sidemenu">
-                                <Link href="#" className="sidemenu__item"><span className="sidemenu__item-inner" >Support Portal</span></Link>
-                                <Link href="#" className="sidemenu__item"><span className="sidemenu__item-inner" >Community</span></Link>
-                                <Link href="#" className="sidemenu__item"><span className="sidemenu__item-inner" >Fun Crem</span></Link>
-                                <Link href="#" className="sidemenu__item"><span className="sidemenu__item-inner" >Misc</span></Link>
-                                <span href="#" className="sidemenu__item"><span className="sidemenu__item-inner" >DL's</span></span>
+                                <Link to="/panel#supportPortal" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Support Portal</span></Link>
+                                <Link to="/panel#community" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Community</span></Link>
+                                <Link to="/panel#funCrew" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Fun Crem</span></Link>
+                                <Link to="/panel#misc" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Misc</span></Link>
+                                <Link href="/panel#DL" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >DL's</span></Link>
                             </div>
                         </div>
                     </div>
