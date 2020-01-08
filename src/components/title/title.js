@@ -1,10 +1,14 @@
 import './title.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Title = props => {
+	 const [effect, setEffect] = useState('');
+	setTimeout(()=>{
+setEffect('effect')
+	},600)
   return(
     <div className="title mt-5">
-      <a className="link link-name" href="#">
+      <a className={`link link-name ${effect}`} href="#">
       	<span data-letters-l="Suri" data-letters-r="nami">Surinami</span>
       </a>
     </div>
