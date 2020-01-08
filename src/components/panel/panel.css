@@ -1,6 +1,5 @@
-
 .panel {
-    margin: 0px 20px 20px 20px;
+    margin: 20px;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -31,4 +30,7 @@
 }
 .panel-body:after {
     clear: both;
+}
+ html {
+  scroll-behavior: smooth;
 }

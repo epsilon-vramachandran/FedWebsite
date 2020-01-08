@@ -14,6 +14,8 @@ import Training from './components/training/traning';
 import Coders from './components/coders/coders';
 import Title from './components/title/title';
 import Panel from './components/panel/panel';
+import TechTalksForm from './components/forms/techtalksform';
+
 
 function Main() {
   	return (
@@ -56,6 +58,7 @@ function Main() {
 		<Route exact path="/title" component= { Title }/>
 		<Route exact path="/team" component= { team }/>
 		<Route exact path="/panel" component= { Panel }/>
+		{ <Route exact path="/techtalksform" component= { TechTalksForm }/> }
 			</Router>
 		</React.Fragment>
   	);

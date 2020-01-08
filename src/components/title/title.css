@@ -52,8 +52,8 @@ a:hover {
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
 }
-.link-name:hover::before, 
-.link-name:hover::after {
+.link-name.effect::before, 
+.link-name.effect::after {
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
 }
@@ -85,8 +85,8 @@ a:hover {
     -webkit-transform: translate3d(5px,0,0);
     transform: translate3d(5px,0,0);
 }
-.link-name:hover span::before, 
-.link-name:hover span::after {
+.link-name.effect span::before, 
+.link-name.effect span::after {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
