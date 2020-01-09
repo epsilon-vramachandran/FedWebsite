@@ -1,6 +1,8 @@
 import './fed.css';
 import React, { Component } from 'react';
 import imgAvatar from './../../assets/imgAvatar.png';
+import Title from "../title/title";
+
 export default class Fed extends Component {
 constructor(props)
 {
@@ -19,6 +21,7 @@ constructor(props)
 render(){
   return (
     <div>
+        <Title pageName="Team"/>
 	<div className="grid-container">
 	{
 		this.state.data.map((item)=><div className="grid-item">

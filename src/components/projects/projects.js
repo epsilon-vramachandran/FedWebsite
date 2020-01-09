@@ -122,7 +122,7 @@ export default class projects extends React.Component {
     return (
       <React.Fragment>
 
-        <Title/>
+        <Title pageName="Projects"/>
         {this.state.showPopUp ? (
           <Fedpopup 
             card={cards.find(item => item.id === this.state.id)}
