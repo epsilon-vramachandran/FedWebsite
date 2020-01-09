@@ -9,7 +9,7 @@ setEffect('effect')
   return(
     <div className="title">
       <a className={`link link-name ${effect}`} href="#">
-      	<span data-letters-l="Suri" data-letters-r="nami">Surinami</span>
+  <span data-letters-r={props.pageName}>{props.pageName}</span>
       </a>
     </div>
   )
