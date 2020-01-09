@@ -17,7 +17,7 @@ a:hover {
     line-height: 1;
     color: #9e9ba4;
     display: inline-block;
-    margin: 50px 0px;
+    margin:0 0 50px 0px;
 }
 .link-name {
     font-family: 'Playfair Display SC', serif;
