@@ -9,7 +9,6 @@ import Menu from './components/shared/nav/nav';
 import Fed  from './components/fed/fed';
 import Projects from './components/projects/projects';
 import Talks from './components/talks/talks';
-import team from './components/team/team';
 import Training from './components/training/traning';
 import Coders from './components/coders/coders';
 import Title from './components/title/title';
@@ -56,7 +55,6 @@ function Main() {
 		<Route exact path="/training" component= { Training }/>
 		<Route exact path="/coders" component= { Coders }/>
 		<Route exact path="/title" component= { Title }/>
-		<Route exact path="/team" component= { team }/>
 		<Route exact path="/panel" component= { Panel }/>
 		{ <Route exact path="/techtalksform" component= { TechTalksForm }/> }
 			</Router>

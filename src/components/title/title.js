@@ -7,7 +7,7 @@ const Title = props => {
 setEffect('effect')
 	},600)
   return(
-    <div className="title mt-5">
+    <div className="title">
       <a className={`link link-name ${effect}`} href="#">
       	<span data-letters-l="Suri" data-letters-r="nami">Surinami</span>
       </a>
