@@ -55,11 +55,11 @@ class Menu extends React.Component {
                     <div className="menu__item menu__item--3" data-direction="bt" >
                         <div className="menu__item-inner" >
                             <div className="sidemenu">
-                                <Link to="/panel#supportPortal" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Support Portal</span></Link>
-                                <Link to="/panel#community" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Community</span></Link>
-                                <Link to="/panel#funCrew" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Fun Crem</span></Link>
-                                <Link to="/panel#misc" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Misc</span></Link>
-                                <Link to="/panel#DL" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >DL's</span></Link>
+                                <Link to="/panel#react-tabs-0" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Support Portal</span></Link>
+                                <Link to="/panel#react-tabs-2" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Community</span></Link>
+                                <Link to="/panel#react-tabs-4" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Fun Crem</span></Link>
+                                <Link to="/panel#react-tabs-6" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >Misc</span></Link>
+                                <Link to="/panel#react-tabs-8" className="sidemenu__item" onClick={this.handleClick}><span className="sidemenu__item-inner" >DL's</span></Link>
                             </div>
                         </div>
                     </div>
