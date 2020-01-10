@@ -47,7 +47,12 @@ export default class Fedpopup extends React.Component {
               timeout={600}
               classNames="scale"
             >
-              <div className="blk_right">
+              <div
+                className="blk_right"
+                style={{
+                  backgroundImage: `url(${this.props.popupBackground})`
+                }}
+              >
                 <ListDescription description={selectedCard.description} />
               </div>
             </CSSTransition>
