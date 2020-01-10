@@ -23,7 +23,8 @@ export default class projects extends React.Component {
     let cards = [
       {
         id: 1,
-        background: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/4f610e38294007.575c36d5b34c8.jpg",
+        background:
+          "https://mir-s3-cdn-cf.behance.net/project_modules/disp/4f610e38294007.575c36d5b34c8.jpg",
         title: "Item1_Title",
         subTitle: "Item1_Subtitle",
         popupContent: [
@@ -48,7 +49,8 @@ export default class projects extends React.Component {
       },
       {
         id: 2,
-        background: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg",
+        background:
+          "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg",
         title: "Item2_Title2",
         subTitle: "Item2_title2",
         popupContent: [
@@ -72,7 +74,8 @@ export default class projects extends React.Component {
       },
       {
         id: 3,
-        background: "https://explore.easyprojects.net/wp-content/uploads/2012/08/project-management-952x640.png",
+        background:
+          "https://explore.easyprojects.net/wp-content/uploads/2012/08/project-management-952x640.png",
         title: "Item3_Title3",
         subTitle: "Item3_title3",
         popupContent: [
@@ -96,7 +99,8 @@ export default class projects extends React.Component {
       },
       {
         id: 4,
-        background: "https://t8f8b3g9.stackpathcdn.com/wp-content/uploads/2019/07/3.png",
+        background:
+          "https://t8f8b3g9.stackpathcdn.com/wp-content/uploads/2019/07/3.png",
         title: "Item4_Title4",
         subTitle: "Item4_title4",
         popupContent: [
@@ -121,12 +125,14 @@ export default class projects extends React.Component {
     ];
     return (
       <React.Fragment>
-
-        <Title pageName="Projects"/>
+        <Title pageName="Projects" />
         {this.state.showPopUp ? (
-          <Fedpopup 
+          <Fedpopup
             card={cards.find(item => item.id === this.state.id)}
             handleCloseClick={this.handleClick}
+            popupBackground={
+              cards.find(item => item.id === this.state.id).background
+            }
           />
         ) : (
           false

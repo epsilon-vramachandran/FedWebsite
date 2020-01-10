@@ -108,6 +108,8 @@ a {
   background: #fff;
   color: #333;
   z-index: 1;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .innerContainer {
@@ -175,7 +177,7 @@ a {
   opacity: 1;
   /* transform: translate3d(0, 0, 0); */
   margin-left: 0%;
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
   /* width: 0;
   height: 0; */
   /* position: absolute;
@@ -187,7 +189,7 @@ a {
   top: 0%;
   width: 100%;
   position: absolute;
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .scale-enter {

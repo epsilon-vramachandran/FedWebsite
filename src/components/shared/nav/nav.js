@@ -1,37 +1,42 @@
-import './nav.css';
-import React from 'react';
-import closeIcon from '../../../assets/close.svg';
-import logo from '../../../assets/logo.svg';
-import { HashLink as Link } from 'react-router-hash-link';
+import "./nav.css";
+import React from "react";
+import closeIcon from "../../../assets/close.svg";
+import logo from "../../../assets/logo.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      condition: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            condition: false
-        }
-        this.handleClick= this.handleClick.bind(this)
-    }
+  handleClick() {
+    this.setState({
+      condition: !this.state.condition
+    });
+  }
 
-    handleClick() {
-        this.setState({
-            condition: !this.state.condition
-        })
-    }
+  render() {
+    let showLogo = window.location.hash === "#/";
+    return (
+      <div>
+        <div className="headerTop">
+          {!showLogo ? (
+            <div className="logoTop">
+              <img src={logo} alt="logo" className="logo" />
+            </div>
+          ) : (
+            ""
+          )}
 
-    render() {
-      
-        return(
-            <div>
-                <div className="headerTop">
-                    <div className="logoTop">
-                        <img src={logo} alt="" className="logo" />
-                    </div>
-                    <div className="menu-trigger" >
-                        <span onClick={ this.handleClick }></span>
-                    </div>
-                </div>
+          <div className="menu-trigger">
+            <span onClick={this.handleClick}></span>
+          </div>
+        </div>
+
 
                 <div  className={ this.state.condition ? "menu menu--open" : "menu" }>
                     <div className="menu__item menu__item--1" data-direction="bt" >
@@ -77,8 +82,14 @@ class Menu extends React.Component {
                     <button className="action action--close" onClick={ this.handleClick }><img src={closeIcon} alt="" /></button>
                 </div>
             </div>
-        )
-    }
+          </div>
+          <button className="action action--close" onClick={this.handleClick}>
+            <img src={closeIcon} alt="" />
+          </button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Menu;
