@@ -1,36 +1,38 @@
-.panel {
-    margin: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+.react-tabs {
+    margin-top: 50px;
 }
-.panel-default {
-    border-color: #ddd;
+.react-tabs__tab-list {
+    border:none !important;
+    text-align: center;
+    margin-bottom: 75px !important;
 }
-.panel-default>.panel-heading {
-    color: #333;
-    background-color: #f5f5f5;
-    border-color: #ddd;
+.react-tabs__tab-panel {
+    border: 2px solid #636462;
+    padding: 30px;
 }
-.panel-heading {
-    padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+.react-tabs__tab {
+    min-width: 150px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#636462;
 }
-.panel-body {
-    padding: 15px;
-    color: #333;
+.react-tabs__tab--selected {
+    background:transparent !important;
+    border-color: none !important;
+    color: #fff !important;
+    border: none !important
 }
-.panel-body:before {
-    display: table;
-    content: " ";
+.react-tabs__tab--selected:before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    height: 0px;
+    width: 35%;
+    border-bottom: 5px solid #fff;
+    top: -9px;
 }
-.panel-body:after {
-    clear: both;
-}
- html {
-  scroll-behavior: smooth;
+.react-tabs__tab-panel h2 {
+    margin: 30px 0px;
+    text-transform: uppercase;
+    font-size: 26px;
 }
