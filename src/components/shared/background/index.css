@@ -16,3 +16,64 @@ html, body{
     bottom: 0;
     margin: auto;
 }
+
+body{
+    background: black;
+    position: relative;
+    color: #fff;
+}
+html, body{
+    height: 100%;
+}
+.logoLayout{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+ .bounce {
+  position:fixed;
+  left:50%;
+  bottom:40%;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  -webkit-animation:bounce 1s infinite;
+  -moz-animation:bounce 1s infinite;
+  -o-animation:bounce 1s infinite;
+  animation:bounce 1s infinite;
+
+}
+
+@-webkit-keyframes bounce {
+    0%       { bottom:40%; }
+    50%      { bottom:42%; }
+    100%     {bottom:30;}
+}
+
+ @-moz-keyframes bounce {
+    0%       { bottom:40%; }
+    50%      { bottom:42%; }
+    100%     {bottom:30;}
+}
+
+ @-o-keyframes bounce {
+    0%       { bottom:40%; }
+    50%      { bottom:42%; }
+    100%     {bottom:30;}
+}
+
+ @keyframes bounce {
+    0%       { bottom:40%; }
+    50%      { bottom:42%; }
+    100%     {bottom:30;}
+}
+.arrow{
+    position: relative;
+    left: -5px;
+}

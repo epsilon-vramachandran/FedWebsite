@@ -1,7 +1,7 @@
 import './title.css';
 import React, { useState } from 'react';
 
-const Title = props => {
+const Title = (props) => {
 	 const [effect, setEffect] = useState('');
 	setTimeout(()=>{
 setEffect('effect')
